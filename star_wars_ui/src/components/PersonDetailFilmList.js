@@ -1,4 +1,5 @@
 /**
+ * PersonDetailFilmList component
  * Created by frankwong on 12/02/2018.
  */
 import React, { Component } from 'react'
@@ -39,7 +40,7 @@ class PersonDetailFilmList extends Component {
     }
 }
 
-// SWAPI Person query
+// SWAPI Person query for films
 const PERSONFILMS_QUERY = gql`
     query personFilmsQuery($id: Int) {
         person(id: $id) {
@@ -52,7 +53,7 @@ const PERSONFILMS_QUERY = gql`
     }
 `
 
-// Wrap person list component with People query
+// Wrap component with Person query for films
 export default graphql(PERSONFILMS_QUERY, {
     name: 'personFilmsQuery',
     options: ownProps => {

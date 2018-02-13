@@ -29,9 +29,11 @@ class FilmType extends ObjectType
                     ],
                     'title' => [
                         'type' => Type::string(),
+                        'description' => 'The title of the film.',
                     ],
                     'release_date' => [
                         'type' => Type::string(),
+                        'description' => 'The date the film was released.',
                     ],
                 ];
             }

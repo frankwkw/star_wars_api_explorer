@@ -1,4 +1,5 @@
 /**
+ * PersonDetail component
  * Created by frankwong on 12/02/2018.
  */
 import React, { Component } from 'react'
@@ -92,7 +93,7 @@ const PERSON_QUERY = gql`
     }
 `
 
-// Wrap person list component with People query
+// Wrap component with Person query
 export default graphql(PERSON_QUERY, {
     name: 'personQuery',
     options: ownProps => {

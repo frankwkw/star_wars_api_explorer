@@ -22,6 +22,7 @@ class QueryType extends ObjectType
                     // Search people
                     'allPeople' => [
                         'type' => Type::listOf(SWAPITypes::person()),
+                        'description' => 'Query all people in SWAPI.',
                         'resolve' => function() {
                             $swapi = new SWAPI;
 
@@ -31,6 +32,7 @@ class QueryType extends ObjectType
                     // Retrieve person by ID
                     'person' => [
                         'type' => SWAPITypes::person(),
+                        'description' => 'Query a specific person in SWAPI.',
                         'args' => [
                             'id' => Type::int()
                         ],

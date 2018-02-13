@@ -1,4 +1,5 @@
 /**
+ * PersonListRecord component
  * Created by frankwong on 12/02/2018.
  */
 import React, { Component } from 'react'
@@ -13,7 +14,7 @@ class PersonListRecord extends Component {
                 button
                 variant="raised"
                 component="button"
-                onClick={() => {this.props.onSelectResource('People', this.props.person.id)}}
+                onClick={() => {this.props.onSelectResource('people', this.props.person.id)}}
             >
                 <Icon>
                     <PersonIcon />

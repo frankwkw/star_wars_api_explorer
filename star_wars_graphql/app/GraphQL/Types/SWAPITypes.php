@@ -7,12 +7,9 @@
 namespace App\GraphQL\Types;
 
 /**
- * Class Types
+ * SWAPI Types
  *
- * Acts as a registry and factory for your types.
- *
- * As simplistic as possible for the sake of clarity of this example.
- * Your own may be more dynamic (or even code-generated).
+ * Registry and factory for the SWAPI types.
  *
  * @package SWGraphQL\SWGraphQL
  */
