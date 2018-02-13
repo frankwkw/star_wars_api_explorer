@@ -5,6 +5,7 @@ A web application for viewing *People* data from the [Star Wars API](https://swa
 - [Introduction](#Introduction)
 - [Installation](#Installation)
 - [Usage](#Usage)
+- [Stack](#Stack)
 
 ## Introduction
 The API Explorer is front-ended by a [React](https://reactjs.org/) application that retrieves data from the back-end [PHP](http://www.php.net/) service.
@@ -23,8 +24,7 @@ This service is implemented on the [Lumen](https://lumen.laravel.com/) framework
 ```
 composer install
 ```
-3. 
-Start the local PHP server:
+3. Start the local PHP server:
 ```
 php -S localhost:8000 -t public
 ```
@@ -39,8 +39,7 @@ yarn install
 ```
 REACT_APP_SWAPI_GRAPHQL=http://localhost:8000/api/graphql
 ```
-4.
-Start the web application:
+4. Start the web application:
 ```
 yarn start
 ```
@@ -52,3 +51,15 @@ http://localhost:3000/
 ```
 
 This will open the Star Wars API Explorer application, upon which you'll be presented with a list of characters to peruse.
+
+## Stack
+### Back-end
+
+* [Lumen](https://lumen.laravel.com/)
+* [GraphQL-PHP](https://github.com/webonyx/graphql-php)
+* [SWAPI-PHP](https://github.com/rmasters/swapi-php)_*modified _
+
+### Front-end
+* [React](https://reactjs.org/)
+* [Apollo Client](https://github.com/apollographql/apollo-client)
+* [Material UI](https://material-ui-next.com)
