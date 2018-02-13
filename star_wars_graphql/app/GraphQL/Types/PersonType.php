@@ -30,30 +30,39 @@ class PersonType extends ObjectType
                     ],
                     'name' => [
                         'type' => Type::string(),
+                        'description' => 'The name of the person.',
                     ],
                     'birth_year' => [
                         'type' => Type::string(),
+                        'description' => 'The year the person was born.',
                     ],
                     'eye_color' => [
                         'type' => Type::string(),
+                        'description' => 'The eye color of the person.',
                     ],
                     'gender' => [
                         'type' => Type::string(),
+                        'description' => 'The gender of the person.',
                     ],
                     'hair_color' => [
                         'type' => Type::string(),
+                        'description' => 'The hair color of the person.',
                     ],
                     'height' => [
                         'type' => Type::int(),
+                        'description' => 'The height of the person.',
                     ],
                     'mass' => [
                         'type' => Type::int(),
+                        'description' => 'The mass of the person.',
                     ],
                     'skin_color' => [
                         'type' => Type::string(),
+                        'description' => 'The skin color of the person.',
                     ],
                     'homeworld' => [
                         'type' => SWAPITypes::planet(),
+                        'description' => 'The homeworld of the person.',
                         'resolve' => function($person) {
                             if (isset($person->homeworld) === false) {
                                 return null;
@@ -68,6 +77,7 @@ class PersonType extends ObjectType
                     ],
                     'films' => [
                         'type' => Type::listOf(SWAPITypes::film()),
+                        'description' => 'Films that featured the person.',
                         'resolve' => function($person) {
                             if (empty($person->films) === true) {
                                 return [];

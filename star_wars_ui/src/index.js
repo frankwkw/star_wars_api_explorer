@@ -11,7 +11,7 @@ import { ApolloClient } from 'apollo-client'
 import { HttpLink } from 'apollo-link-http'
 import { InMemoryCache } from 'apollo-cache-inmemory'
 
-// Connect to Star Wars GraphQL
+// Initialise link to Star Wars GraphQL with URL from .env file
 const httpLink = new HttpLink({ uri: process.env.REACT_APP_SWAPI_GRAPHQL })
 
 // Instantiate Apollo client

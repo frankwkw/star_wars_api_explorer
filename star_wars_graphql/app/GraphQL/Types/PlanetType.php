@@ -29,6 +29,7 @@ class PlanetType extends ObjectType
                     ],
                     'name' => [
                         'type' => Type::string(),
+                        'description' => 'The name of the planet.',
                     ],
                 ];
             }

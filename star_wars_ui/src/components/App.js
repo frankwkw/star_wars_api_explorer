@@ -1,3 +1,7 @@
+/**
+ * Application component
+ * Created by frankwong on 11/02/2018.
+ */
 import React, { Component } from 'react';
 import { Switch, Route, Redirect } from 'react-router-dom'
 import { withRouter } from 'react-router'

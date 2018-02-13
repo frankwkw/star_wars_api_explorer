@@ -1,4 +1,5 @@
 /**
+ * Explorer component
  * Created by frankwong on 12/02/2018.
  */
 import React, { Component } from 'react'
@@ -18,6 +19,7 @@ const styles = theme => ({
 });
 
 class Explorer extends Component {
+    // Callback for redirection to selected resource
     onSelectResource(type, id) {
         this.props.history.push(`/${type}/${id}`)
     }

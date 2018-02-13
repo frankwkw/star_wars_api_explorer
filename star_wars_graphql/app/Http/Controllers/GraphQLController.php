@@ -45,6 +45,7 @@ class GraphQLController extends Controller
                 (array) $data['variables']
             );
 
+            // Indicate error code if any were returned
             if (empty($result->errors) === true) {
                 $httpStatus = 200;
             } else {

@@ -1,4 +1,5 @@
 /**
+ * PersonList component
  * Created by frankwong on 12/02/2018.
  */
 import React, { Component } from 'react'

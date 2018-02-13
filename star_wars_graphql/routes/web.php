@@ -15,7 +15,7 @@ $router->get('/', function () use ($router) {
     return $router->app->version();
 });
 
-// Support both GET and POST
+// Support both GET and POST for GraphQL
 $router->get('api/graphql', 'GraphQLController@query');
 $router->post('api/graphql', 'GraphQLController@query');
 
